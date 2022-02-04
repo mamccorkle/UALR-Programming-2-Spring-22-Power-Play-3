@@ -45,6 +45,13 @@ namespace MonsterAttackUnitTest
 			// Call the testing function:
 			monsterAttack( player, monsters );
 
+			// Test for player health change:
+			Assert::IsTrue(player.health <= 20);
+
+			// Loop through the monster(s) and verify their health is unchanged:
+			for (auto monster : monsters)
+				Assert::AreEqual(monster.health, monsterTestingHealth);
+
 		}
 	};
 }
