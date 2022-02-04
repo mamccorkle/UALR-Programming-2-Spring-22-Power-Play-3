@@ -32,6 +32,14 @@ namespace MonsterAttackUnitTest
 
 		TEST_METHOD(MonsterAttackTestMethod)
 		{
+
+			// Create two monsters and store in a vector for testing:
+			std::vector<Object> monsters;
+			int monsterTestingHealth{ 25 };
+			monsters.push_back({ "The Diabolical Terror Rat",	3, monsterTestingHealth });
+			monsters.push_back({ "The Crazed Flame Bull",		3, monsterTestingHealth });
+
+
 		}
 	};
 }
