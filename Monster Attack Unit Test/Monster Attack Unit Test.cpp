@@ -39,6 +39,11 @@ namespace MonsterAttackUnitTest
 			monsters.push_back({ "The Diabolical Terror Rat",	3, monsterTestingHealth });
 			monsters.push_back({ "The Crazed Flame Bull",		3, monsterTestingHealth });
 
+			// Create the player object:
+			Object player{ "Mad Dog", 5, 20 };
+
+			// Call the testing function:
+			monsterAttack( player, monsters );
 
 		}
 	};
