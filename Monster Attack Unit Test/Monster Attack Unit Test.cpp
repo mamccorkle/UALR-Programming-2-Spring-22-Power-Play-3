@@ -12,8 +12,17 @@
 //
 #include "pch.h"
 #include "CppUnitTest.h"
+#include <vector>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+struct Object
+{
+	std::string name;
+	int strength{ 0 };
+	int health{ 0 };
+};
+bool monsterAttack(Object& player, const std::vector<Object>& monsters);
 
 namespace MonsterAttackUnitTest
 {
