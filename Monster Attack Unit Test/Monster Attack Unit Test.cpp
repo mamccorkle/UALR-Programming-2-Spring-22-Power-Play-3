@@ -38,6 +38,8 @@ namespace MonsterAttackUnitTest
 			int monsterTestingHealth{ 25 };
 			monsters.push_back({ "The Diabolical Terror Rat",	3, monsterTestingHealth });
 			monsters.push_back({ "The Crazed Flame Bull",		3, monsterTestingHealth });
+			//monsters.push_back({ "The Red-Eyed Cinder Hog",		3, 45 });						// Unit Test, Fail test 1
+			//monsters.push_back({ "The Rotten Screamer",			3, 0 });						// Unit Test, Fail test 2
 
 			// Create the player object:
 			Object player{ "Mad Dog", 5, 20 };
